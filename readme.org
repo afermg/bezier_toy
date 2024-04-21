@@ -1,0 +1,16 @@
+#+title: Readme
+
+* Overview
+Repository to learn how to use bezier curves with the long-term aim of implement a plugin for napari to fix segmentation errors and curate data for deep learning training.
+
+* Learning goals
+- [X] Implement closed Bézier curves from a set of segments. For my personal understanding I am splitting control points into "vertices" (points where segments start and end) and controls (points that determine the curvatures).
+- [ ] Implement an algorithm that converts a Bézier curve into a mask.
+- [ ] Implement Intersection over Union (IoU) to compare a given masks to another produced from a Bézier curve.
+- [ ] Develop an algorithm that explores modifications to a Bézier curve to fit a given mask using the compared Intersection over Union.
+
+* Resources
+The main learning resources are:
+- Great visual overview https://www.youtube.com/watch?v=aVwxzDHniEw
+- splines Python library https://splines.readthedocs.io/en/latest/euclidean/bezier.html
+- On fitting bezier curves https://raphlinus.github.io/curves/2023/04/18/bezpath-simplify.html

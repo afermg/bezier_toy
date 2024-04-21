@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "bezier-fit"
+version = "0.1.0"
+description = ""
+authors = ["Alán F. Muñoz <afer.mg@gmail.com>"]
+readme = "README.org"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+splines = "^0.3.1"
+matplotlib = "^3.8.4"
+
+
+[tool.poetry.group.dev.dependencies]
+jupytext = "^1.15.0"
+ipdb = "^0.13.13"
+jupyter = "^1.0.0"
+ruff = "^0.4.1"
+ruff-lsp = "^0.0.53"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
